@@ -1,0 +1,289 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #d4ecff; /* Biru langit muda */
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #d4ecff; /* Tambahkan warna latar belakang putih agar teks hitam terlihat */
+  padding: 15px 30px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold; /* Supaya font navbar tebal */
+}
+
+.nav-links li a {
+  color: black; /* Ganti dari putih ke hitam */
+  text-decoration: none;
+  font-weight: bold; /* Font tebal */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: left;
+  padding: 60px 20px;
+  color: white;
+  background: linear-gradient(135deg, #3abaff, #174a96);
+}
+
+.hero-img {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto 30px auto;
+  animation: bounce 2s infinite ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  color: #27ae60;
+  padding: 12px 28px;
+  border-radius: 50px; /* agar lebih bulat */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.05);
+}
+
+
+/* Produk Section */
+.produk-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.produk-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.produk-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 128, 255, 0.3); /* Biru neon glow */
+}
+
+.produk-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.harga {
+  color: #27ae60;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.wa-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.wa-btn:hover {
+  background-color: #1ebe5c;
+}
+
+.hero h1, .hero p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.wrapper {
+  background: linear-gradient(145deg, #e6f3ff, #d0e9ff);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tentang-section, .kontak-section {
+  padding: 30px 20px;
+  background-color: #d4ecff;
+  text-align: center;
+  color: #333;
+}
+
+.wrapper {
+  padding: 30px 20px; /* sebelumnya 40px 30px */
+}
+
+
+.tentang-section h2,
+.kontak-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #174a96;
+}
+
+.tentang-section p,
+.kontak-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.kontak-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kontak-section li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.kontak-section a {
+  color: #2b80ff;
+  text-decoration: none;
+}
+
+.kontak-section a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
+
+/* === Modal Overlay === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+  display: none; /* default sembunyi */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* === Modal Box === */
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: zoomIn 0.3s ease;
+}
+
+/* === Animasi zoom muncul === */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* === Tombol Close (X) === */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+}
+
+.close-btn:hover {
+  color: red;
+}

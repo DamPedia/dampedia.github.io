@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DamPediaShop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!-- Modal Popup -->
+<div class="modal" id="popup">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 id="popup-title">Judul Produk</h3>
+    <p id="popup-desc">Deskripsi lengkap produk akan ditampilkan di sini.</p>
+    <a id="popup-link" href="#" target="_blank" class="wa-btn">Order via WhatsApp</a>
+  </div>
+</div>
+</body>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">DamPediaShop</div>
+    <ul class="nav-links">
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+<!-- HERO -->
+<header class="hero" data-aos="fade-up">
+  <div class="hero-text">
+    <h1>Selamat Datang di Toko DamPediaShop</h1>
+    <p>Kami menyediakan layanan VPS, panel pterodactyl, instal panel,Nokos Telegram & WhatsApp, dan script murah berkualitas.</p>
+    <a href="#produk" class="cta-btn">Lihat Produk</a>
+  </div>
+</header>
+
+  <!-- Produk -->
+  <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Produk Unggulan</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Ram 1GB Core 1', 'Paket VPS dengan RAM 1GB cocok untuk bot ringan saja.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%201GB%20Core%201')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 1" />
+      <h3>Ram 1GB Core 1</h3>
+      <p class="harga">Rp15.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 2GB Core', 'VPS dengan RAM 2GB cocok untuk Run Bot yang ringan menengah.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%202GB%20Core%201')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 2" />
+      <h3>Ram 2GB Core 1</h3>
+      <p class="harga">Rp20.000</p>
+    </div>
+      <!-- Produk 3 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 2GB Core 2', 'VPS dengan RAM 2GB cocok untuk Run Bot yang ringan menengah ke atas.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%202GB%20Core%202')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 2" />
+      <h3>Ram 2GB Core 2</h3>
+      <p class="harga">Rp30.000</p>
+    </div>
+        <!-- Produk 4 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 4GB Core 2', 'VPS dengan RAM 4GB cocok untuk Run Bot yang ringan menengah Ke Atas Dan Bisa Open Bot Pushkontak.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%204GB%20Core%202')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 2" />
+      <h3>Ram 4GB Core 2</h3>
+      <p class="harga">Rp40.000</p>
+    </div>
+        <!-- Produk 5 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 8GB Core 4', 'VPS dengan RAM 8GB cocok untuk Run Bot yang Mbnya Di Atas 1Mb Dan Juga Cocok Untuk Open Bot & Reseller Panel Bot.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%208GB%20Core%204')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 2" />
+      <h3>Ram 8GB Core 4</h3>
+      <p class="harga">Rp50.000</p>
+    </div>
+       <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 16GB Core 4', 'VPS dengan RAM 16GB cocok untuk Semua Kebutuh Kamu.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20VPS%2016GB%20Core%204')">
+      <img src="https://files.catbox.moe/xonlut.jpg" alt="Produk 2" />
+      <h3>Ram 16GB Core 4</h3>
+      <p class="harga">Rp60.000</p>
+    </div>
+  </div>
+</section>
+ <!-- Produk -->
+  <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Produk Panel Pterodactyl</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Ram 1GB', 'Untuk Pembelian Bisa LangSung Chat saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%201GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 1" />
+      <h3>Ram 1GB</h3>
+      <p class="harga">Rp2.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 2GB', 'Untuk Pembelian Bisa LangSung Chat saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%202')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 2GB</h3>
+      <p class="harga">Rp3.000</p>
+    </div>
+      <!-- Produk 3 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 3GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%203GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 3GB</h3>
+      <p class="harga">Rp4.000</p>
+    </div>
+        <!-- Produk 4 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 4GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%204G')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 4GB</h3>
+      <p class="harga">Rp5.000</p>
+    </div>
+        <!-- Produk 5 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 5GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%205GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 5GB</h3>
+      <p class="harga">Rp6.000</p>
+    </div>
+       <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 6GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%206GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 6GB</h3>
+      <p class="harga">Rp7.000</p>
+    </div>
+           <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 7GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%207GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 7GB</h3>
+      <p class="harga">Rp8.000</p>
+  </div>
+         <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 8GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%208GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 8GB</h3>
+      <p class="harga">Rp9.000</p>
+      </div>
+             <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 9GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%209GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 9GB</h3>
+      <p class="harga">Rp10.000</p>
+      </div>
+             <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram 10GB', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%2010GB')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram 10GB</h3>
+      <p class="harga">Rp12.000</p>
+      </div>
+             <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ram UNLIMITED', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Panel%20UNLIMITED')">
+      <img src="https://files.catbox.moe/qzt8da.jpg" alt="Produk 2" />
+      <h3>Ram UNLIMITED</h3>
+      <p class="harga">Rp14.000</p>
+      </div>
+</section>
+ <!-- Produk -->
+  <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Jasa Instalasi Panel</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Jasa Install Panel Pterodactyl', 'Untuk Pembelian Bisa Langsung Chat Saja Ya.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Order%20Jasa%20Install%20Panel')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 1" />
+      <h3>Install Panel Pteroctyl</h3>
+      <p class="harga">Rp10.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Install Thema', 'Untuk Install Thema Kamu Bisa Pilih, Billing, Stellar, Enigma, dan NightCore.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Order%20Jasa%20Install%20Thema')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 2" />
+      <h3>Install Thema</h3>
+      <p class="harga">Rp12.000</p>
+    </div>
+  </div>
+</section>
+<!-- Produk -->
+  <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">All Join Panel</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Ke untungannya', 'Bisa Creat Panel Sampai 10Gb, Bisa Jualan Bot, Dan Free 2 Sc ( Bisa di Nego ).', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Join%20Reseller%20Panel')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 1" />
+      <h3>Reseller Panel</h3>
+      <p class="harga">Rp10.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ke untungannya', 'Bisa Creat Panel Sampai 10Gb, Bisa Jualan Bot, Bisa open Reseller Dan Free 2 Sc ( Bisa di Nego ).', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Join%20Admin%20Panel')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 2" />
+      <h3>Admin Panel</h3></h3>
+      <p class="harga">Rp20.000</p>
+    </div>
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ke untungannya', 'Bisa Creat Panel Sampai Unlimited, Bisa Jualan Bot,Bisa Open Reseller,ADP Panel Dan Free 2 Sc ( Bisa di Nego ).', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Join%20Owner%20Panel')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 2" />
+      <h3>Partner Panel</h3>
+      <p class="harga">Rp40.000</p>
+    </div>
+        <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ke untungannya', 'Bisa Creat Panel Sampai Unlimited, Bisa Jualan Bot,Bisa Open Reseller,ADP,PT Panel Dan Free 2 Sc ( Bisa di Nego ).', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Join%20Owner%20Panel')">
+      <img src="https://files.catbox.moe/p7mru3.jpg" alt="Produk 2" />
+      <h3>Owner Panel</h3>
+      <p class="harga">Rp40.000</p>
+    </div>
+  </div>
+  </div>
+    <!-- Produk 2 -->
+      <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Produk Script Whatsapp</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Ke unggulan', 'Bisa Memfilter kontak supaya meminimalisir ke kenon.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Sc%20Push%20VIP%20V5')">
+      <img src="https://files.catbox.moe/10rfh4.jpg" alt="Produk 1" />
+      <h3>Sc Pushkontak VIP V5</h3>
+      <p class="harga">Rp15.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ke unggulan', 'Bisa Pushkontak sepuasnya Dan Anti kenon', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20beli%20sc%20pushkontal%20New')">
+      <img src="https://files.catbox.moe/10rfh4.jpg" alt="Produk 2" />
+      <h3>Pushkontak New </h3></h3>
+      <p class="harga">Rp20.000</p>
+    </div>
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Ke unggulan', 'cpanel tanpa add member Hanya perlu addakses aja.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20beli%20OSc%20V7')">
+      <img src="https://files.catbox.moe/10rfh4.jpg" alt="Produk 2" />
+      <h3>Sc Simple v7</h3>
+      <p class="harga">Rp40.000</p>
+    </div>
+    </section>
+    </div>
+      <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Produk Nokos Whatsapp</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Nokos Indo', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20indo%20whatsapp')">
+      <img src="https://files.catbox.moe/1b2q0m.jpg" alt="Produk 1" />
+      <h3>Nokos Indonesia</h3>
+      <p class="harga">Rp10.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Nokos Malau', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20malay%20whatsapp')">
+      <img src="https://files.catbox.moe/1b2q0m.jpg" alt="Produk 2" />
+      <h3>Nokos Malaysia</h3>
+      <p class="harga">Rp17.000</p>
+    </div>
+      <!-- Produk 3 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Nokos France', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20France%20whatsapp')">
+      <img src="https://files.catbox.moe/1b2q0m.jpg" alt="Produk 2" />
+      <h3>Nokos France</h3>
+      <p class="harga">Rp25.000</p>
+    </div>
+    </section>
+      <section class="produk-section" id="produk">
+    <h2 class="produk-title" data-aos="fade-right">Produk Nokos Telegram</h2>
+    <div class="produk-container">
+    <!-- Produk 1 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="100"
+      onclick="openModal('Nokos Malaysia', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20malay%20telegram')">
+      <img src="https://files.catbox.moe/wl4ciy.png" alt="Produk 1" />
+      <h3>Nokos Malaysia</h3>
+      <p class="harga">Rp15.000</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Nokos Indonesia', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20indo%20telegram')">
+      <img src="https://files.catbox.moe/wl4ciy.png" alt="Produk 2" />
+      <h3>Nokos Indonesia</h3>
+      <p class="harga">Rp10.000</p>
+    </div>
+      <!-- Produk 3 -->
+    <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Nokos France', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20France%20telegram')">
+      <img src="https://files.catbox.moe/wl4ciy.png" alt="Produk 2" />
+      <h3>Nokos France</h3>
+      <p class="harga">Rp25.000</p>
+    </div>
+        <div class="produk-box" data-aos="fade-up" data-aos-delay="150"
+      onclick="openModal('Nokos France', 'Harga Murah Dan Terjangkau.', 'https://wa.me/6289504651143?text=Halo%20Saya%20Mau%20Beli%20Nokos%20USA%20telegram')">
+      <img src="https://files.catbox.moe/wl4ciy.png" alt="Produk 2" />
+      <h3>Nokos amerisya Usyara</h3>
+      <p class="harga">Rp20.000</p>
+    </div>
+    </section>
+  </section>
+  
+  
+  
+
+<!-- BAGIAN BAWAH JANGAN DI GANGGU -->
+<!-- Tentang -->
+<section class="tentang-section" id="tentang" data-aos="fade-up">
+  <h2>Tentang Kami</h2>
+  <p>
+    DamPediaShop adalah toko digital yang menyediakan berbagai layanan seperti VPS murah, panel Pterodactyl, script bot,join panel, dan jasa instalasi server. 
+    Kami berkomitmen memberikan layanan berkualitas, murah, dan cepat untuk semua kebutuhan digital Anda.
+  </p>
+</section>
+
+<!-- Modal Pop-up -->
+<div class="modal" id="popup">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 id="popup-title">Judul Produk</h3>
+    <p id="popup-desc">Deskripsi lengkap produk akan ditampilkan di sini.</p>
+    <a id="popup-link" href="#" target="_blank" class="wa-btn">Order via WhatsApp</a>
+  </div>
+</div>
+
+<!-- Kontak -->
+<section class="kontak-section" id="kontak" data-aos="fade-up">
+  <h2>Kontak Kami</h2>
+  <p>Silakan hubungi kami jika ada pertanyaan atau butuh bantuan:</p>
+  <ul>
+    <li>Email: <a href="mailto:dampediaa@gmail.com">dampediaa@gmail.com</a></li>
+    <li>WhatsApp: <a href="https://wa.me/6289504651143" target="_blank">6289504651143</a></li>
+    <li>Instagram: <a href="https://instagram.com/dampediashop" target="_blank">@xadam28</a></li>
+  </ul>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DamPediaShop. All rights reserved.</p>
+  </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="damnew.js"></script>
+</body>
+</html>
