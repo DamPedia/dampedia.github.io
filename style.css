@@ -43,27 +43,84 @@ body {
 /* Hero */
 .hero {
   text-align: left;
-  padding: 60px 20px;
+  padding: 30px 10px;
   color: white;
   background: linear-gradient(135deg, #3abaff, #174a96);
 }
 
-.hero-img {
-  width: 450px;
-  max-width: 90%;
-  height: auto;
-  border-radius: 20px;
-  display: block;
-  margin: 0 auto 30px auto;
-  animation: bounce 2s infinite ease-in-out;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
 }
 
 .hero-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
 }
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  animation: bounceIn 1s ease forwards, floating 2s ease-in-out infinite;
+  transform: scale(1);
+}
+
+/* Animasi muncul (zoom in + bounce) */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animasi floating (mengambang kecil) */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text, .hero-image {
+    max-width: 100%;
+  }
+}
+
 
 .hero-text h1 {
   font-size: 36px;
@@ -74,18 +131,6 @@ body {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
-
-/* Bounce animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
 
 .cta-btn {
   display: inline-block;
