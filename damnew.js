@@ -14,3 +14,16 @@ function openModal(title, desc, link) {
 function closeModal() {
   document.getElementById('popup').style.display = 'none';
 }
+
+// Loading Spinner
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+
+  // Tahan minimal 2 detik sebelum menghilang
+  setTimeout(() => {
+    loader.style.opacity = "0"; // animasi fade out
+    setTimeout(() => {
+      loader.style.display = "none"; // beneran hilang setelah fade
+    }, 500); // 0.5 detik untuk animasi hilang
+  }, 2000); // tahan minimal 2 detik tampil
+});
