@@ -110,13 +110,13 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  animation: bounceIn 1s ease forwards, floating 2s ease-in-out infinite;
-  transform: scale(1);
+width: 100%;
+max-width: 400px;
+height: auto;
+border-radius: 16px;
+box-shadow: 10px 15px 30px rgba(0, 2, 3, 0.5);
+animation: bounceIn 1s ease forwards, floating 2s ease-in-out infinite;
+transform: scale(1);
 }
 
 /* Animasi muncul (zoom in + bounce) */
