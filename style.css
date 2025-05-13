@@ -1,0 +1,260 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background: #1f1f1f;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #00ffe1;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo {
+  color: #00ffe1;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(to bottom right, #000000, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url("https://img1.pixhost.to/images/5690/597686065_yilzishop.jpg")
+    no-repeat center center / cover;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: #00ffe1;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+
+.hero-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Produk Section */
+.produk-section {
+  padding: 3rem 1rem;
+  background: #181818;
+}
+.section-title {
+  text-align: center;
+  color: #00ffe1;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.produk-card {
+  background: #222;
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.produk-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.3);
+}
+.produk-card h3 {
+  color: #00ffe1;
+  margin-bottom: 0.8rem;
+}
+.produk-card ul {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.produk-card li {
+  margin-bottom: 4px;
+}
+.produk-deskripsi {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0.5rem 0;
+}
+.harga {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00f5d4;
+  margin-bottom: 0.5rem;
+}
+.cta-button {
+  display: inline-block;
+  background: #00ffae;
+  color: #000;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* === Tentang & FAQ === */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: #111; /* Sesuai tema DamPediaStore */
+  color: #00ffe1;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.faq-item {
+  background-color: #1a1a1a;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.faq-item p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: black;
+  color: #ccc;
+}
+
+/* Force 2 columns on small screens */
+@media (max-width: 600px) {
+  .produk-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tombol WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Tombol Scroll ke Atas */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 998;
+  display: none;
+  background-color: #54d848;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
