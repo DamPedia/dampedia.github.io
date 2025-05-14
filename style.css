@@ -114,6 +114,11 @@ body {
   text-align: center;
   box-shadow: 0 0 10px #000;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+  /* Tambahkan ini: */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .produk-card:hover {
   transform: scale(1.03);
@@ -151,6 +156,9 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+
+  /* Tambahkan ini: */
+  margin-top: auto; /* Tambahkan ini: */
 }
 
 /* === Tentang & FAQ === */
@@ -168,7 +176,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #fff;
+  color: #00ffe1;
 }
 
 .section-desc {
@@ -187,12 +195,13 @@ body {
   max-width: 700px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   text-align: left;
+  color: #00ffe1;
 }
 
 .faq-item h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #00ffe1;
 }
 
 .faq-item p {
