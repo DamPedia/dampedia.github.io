@@ -176,7 +176,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #00ffe1;
+  color: #00ffe1; /* Sama seperti judul produk */
 }
 
 .section-desc {
@@ -184,7 +184,7 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
-  color: #ccc;
+  color: #ccc; /* Sama seperti deskripsi produk */
 }
 
 .faq-item {
@@ -198,6 +198,12 @@ body {
   color: #00ffe1;
 }
 
+.faq-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00ffe1; /* Sama dengan judul produk */
+}
+
 .faq-item h3 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -206,7 +212,7 @@ body {
 
 .faq-item p {
   font-size: 15px;
-  color: #ccc;
+  color: #ccc; /* Sama seperti deskripsi produk */
 }
 
 /* Footer */
